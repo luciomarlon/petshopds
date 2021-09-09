@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1556</width>
+    <height>542</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>1556</width>
+    <height>0</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>1556</width>
+    <height>542</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>TOTÓ MEU AMIGÃO - FUNCIONÁRIO - ADICIONAR -  EXCLUIR - ALTERAR - LISTAR</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QGroupBox" name="groupBox">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>60</y>
+      <width>1491</width>
+      <height>451</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>14</pointsize>
+     </font>
+    </property>
+    <property name="title">
+     <string>Funcionário</string>
+    </property>
+    <widget class="Line" name="line">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>350</y>
+       <width>1481</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+    <widget class="QTableWidget" name="tabelaFuncionarios">
+     <property name="geometry">
+      <rect>
+       <x>120</x>
+       <y>30</y>
+       <width>1331</width>
+       <height>291</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <column>
+      <property name="text">
+       <string>Nome</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Sobrenome</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Cargo</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Rg</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Cpf</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Data Nasc.</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Telefone</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Celular</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Logradouro</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Cidade</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Cep </string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Salário</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Entrada</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Saída</string>
+      </property>
+     </column>
+    </widget>
+    <widget class="QPushButton" name="btnGerarPdf">
+     <property name="geometry">
+      <rect>
+       <x>600</x>
+       <y>380</y>
+       <width>131</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>14</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(255, 255, 255);
+background-color: rgb(255, 216, 98);
+border-style: outset;
+border-width: 2px;
+border-radius: 15px; 
+border-color: rgb(126, 126, 126);
+</string>
+     </property>
+     <property name="text">
+      <string>Gerar PDF </string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btnExcluirFuncionario">
+     <property name="geometry">
+      <rect>
+       <x>780</x>
+       <y>380</y>
+       <width>131</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>14</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(255, 255, 255);
+background-color: rgb(255, 216, 98);
+border-style: outset;
+border-width: 2px;
+border-radius: 15px; 
+border-color: rgb(126, 126, 126);
+</string>
+     </property>
+     <property name="text">
+      <string>Excluir</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btnListarFuncionario">
+     <property name="geometry">
+      <rect>
+       <x>960</x>
+       <y>380</y>
+       <width>131</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>14</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(255, 255, 255);
+background-color: rgb(255, 216, 98);
+border-style: outset;
+border-width: 2px;
+border-radius: 15px; 
+border-color: rgb(126, 126, 126);
+</string>
+     </property>
+     <property name="text">
+      <string>Listar</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btnAlterar">
+     <property name="geometry">
+      <rect>
+       <x>420</x>
+       <y>380</y>
+       <width>131</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>14</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(255, 255, 255);
+background-color: rgb(255, 216, 98);
+border-style: outset;
+border-width: 2px;
+border-radius: 15px; 
+border-color: rgb(126, 126, 126);
+</string>
+     </property>
+     <property name="text">
+      <string>Alterar</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QLineEdit" name="txtNomeFuncionario">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>20</y>
+      <width>401</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>14</pointsize>
+     </font>
+    </property>
+    <property name="placeholderText">
+     <string>Digite um  Nome ou CPF ou Bairro.</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>20</y>
+      <width>71</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>14</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Nome:</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnBuscarFuncionario">
+    <property name="geometry">
+     <rect>
+      <x>580</x>
+      <y>10</y>
+      <width>141</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string>Buscar</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <tabstops>
+  <tabstop>txtNomeFuncionario</tabstop>
+  <tabstop>btnBuscarFuncionario</tabstop>
+  <tabstop>tabelaFuncionarios</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>

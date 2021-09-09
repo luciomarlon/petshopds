@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1292</width>
+    <height>564</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>1292</width>
+    <height>564</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>1292</width>
+    <height>564</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>AGENDAMENTOS - LISTAR - VISUALIZAR - EXCLUIR</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QGroupBox" name="groupBox">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>60</y>
+      <width>1211</width>
+      <height>471</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>14</pointsize>
+     </font>
+    </property>
+    <property name="title">
+     <string>Agendamento</string>
+    </property>
+    <widget class="Line" name="line">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>350</y>
+       <width>1481</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+    <widget class="QTableWidget" name="tabelaAgendamento">
+     <property name="geometry">
+      <rect>
+       <x>90</x>
+       <y>30</y>
+       <width>1021</width>
+       <height>291</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>9</pointsize>
+      </font>
+     </property>
+     <column>
+      <property name="text">
+       <string>Nome</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Especie</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Porte</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Peso</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Data</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Horário</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Valor</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Profissional</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Procedimento</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Agendamento</string>
+      </property>
+     </column>
+    </widget>
+    <widget class="QPushButton" name="btnExcluirAgendamento">
+     <property name="geometry">
+      <rect>
+       <x>730</x>
+       <y>390</y>
+       <width>141</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>14</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(255, 255, 255);
+background-color: rgb(255, 216, 98);
+border-style: outset;
+border-width: 2px;
+border-radius: 15px; 
+border-color: rgb(126, 126, 126);</string>
+     </property>
+     <property name="text">
+      <string>Excluir</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btnAgendar">
+     <property name="geometry">
+      <rect>
+       <x>130</x>
+       <y>390</y>
+       <width>141</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>14</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(255, 255, 255);
+background-color: rgb(255, 216, 98);
+border-style: outset;
+border-width: 2px;
+border-radius: 15px; 
+border-color: rgb(126, 126, 126);</string>
+     </property>
+     <property name="text">
+      <string>Agendar</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btnListarAgendamento">
+     <property name="geometry">
+      <rect>
+       <x>910</x>
+       <y>390</y>
+       <width>141</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>14</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(255, 255, 255);
+background-color: rgb(255, 216, 98);
+border-style: outset;
+border-width: 2px;
+border-radius: 15px; 
+border-color: rgb(126, 126, 126);</string>
+     </property>
+     <property name="text">
+      <string>Listar</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btnGerarPdfAgendamento">
+     <property name="geometry">
+      <rect>
+       <x>540</x>
+       <y>390</y>
+       <width>141</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>14</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(255, 255, 255);
+background-color: rgb(255, 216, 98);
+border-style: outset;
+border-width: 2px;
+border-radius: 15px; 
+border-color: rgb(126, 126, 126);</string>
+     </property>
+     <property name="text">
+      <string>Gerar PDF </string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btnAlterarAgendamento">
+     <property name="geometry">
+      <rect>
+       <x>330</x>
+       <y>390</y>
+       <width>141</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>14</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(255, 255, 255);
+background-color: rgb(255, 216, 98);
+border-style: outset;
+border-width: 2px;
+border-radius: 15px; 
+border-color: rgb(126, 126, 126);</string>
+     </property>
+     <property name="text">
+      <string>Alterar</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QLineEdit" name="txtBuscarAgendamento">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>20</y>
+      <width>401</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>14</pointsize>
+     </font>
+    </property>
+    <property name="placeholderText">
+     <string>Digite um  Nome Cliente ou Pet</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>20</y>
+      <width>71</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>14</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Nome:</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnConsultar">
+    <property name="geometry">
+     <rect>
+      <x>580</x>
+      <y>10</y>
+      <width>141</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string>Buscar</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <tabstops>
+  <tabstop>txtBuscarAgendamento</tabstop>
+  <tabstop>btnConsultar</tabstop>
+  <tabstop>tabelaAgendamento</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>
